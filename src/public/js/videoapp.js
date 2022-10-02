@@ -17,6 +17,12 @@ let myPeerConnection;
 
 async function handleCameraChange() {
   await getMedia(camerasSelect.value);
+  if (myPeerConnection) {
+    const videoTrack = myStream.getVideoTracks()[0];
+    const videoSender = myPeerConnection.getSenders();
+    videoSender.find((sender) => sender.track.kind === "video");
+    videoSender.replaceTrack(videoTrack);
+  }
 }
 
 async function getCamera() {
@@ -49,7 +55,7 @@ async function getMedia(deviceId) {
   };
   try {
     myStream = await navigator.mediaDevices.getUserMedia(
-      deviceId ? cameraConstrains : cameraConstrains
+      deviceId ? cameraConstrains : initialConstrains
     );
     myFace.srcObject = myStream;
     if (!deviceId) {
