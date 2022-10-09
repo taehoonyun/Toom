@@ -14,23 +14,14 @@ html(lang="en")
                 form
                     input(placeholder ="room name",required,type="text") 
                     button Enter room
-                h4 Open Rooms:
-                ul
             div#myStream
-                div#room
-                    h3 hi
-                    ul#chatting
-                    form#msg
-                        input(placeholder="text", required, type="text")
-                        button Send
-                    button#videoCall VideoCall
                 div#call
                     video#myFace(autoplay,playsinline,width="400",height="400")
                     button#mute mute
                     button#camera Turn Off Camera
                     select#cameras
-                    video#peersFace(autoplay,playsinline,width="400",height="400")
+                video#peersFace(autoplay,playsinline,width="400",height="400")
                     
         script(src="/socket.io/socket.io.js")
-        script(src="/public/js/chattingapp.js") 
+        script(src="/public/js/videoapp.js") 
                
