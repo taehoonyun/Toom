@@ -28,7 +28,9 @@ function receiveMessage(event) {
   const input = room.querySelector("#msg input");
   const chat = document.createElement("li");
   chat.innerText = event.data;
+  chatRoom.style.height = "500px";
   chatRoom.append(chat);
+  chatRoom.style.overflow = "auto";
 }
 
 function handlemessage(event) {
@@ -37,7 +39,11 @@ function handlemessage(event) {
   myDataChannel.send(input.value);
   const chat = document.createElement("li");
   chat.innerText = input.value;
+  chatRoom.style.height = "400px";
+  chatRoom.style.width = "500px";
   chatRoom.append(chat);
+  chatRoom.style.overflow = "auto";
+
   input.value = "";
 }
 
@@ -99,10 +105,10 @@ function handleMuteClick() {
     .getAudioTracks()
     .forEach((track) => (track.enabled = !track.enabled));
   if (!muted) {
-    muteBtn.innerText = "Unmute";
+    muteBtn.innerText = "Mute";
     muted = true;
   } else {
-    muteBtn.innerText = "Mute";
+    muteBtn.innerText = "Unmute";
     muted = false;
   }
 }
@@ -147,6 +153,7 @@ async function handleWelcomeSubmit(event) {
   welcome.hidden = true;
   room.hidden = false;
   await getMedia();
+  myStream.getAudioTracks().forEach((track) => (track.enabled = false));
   makeConnection();
   socket.emit("join_room", input.value);
   roomName = input.value;
@@ -157,8 +164,9 @@ welcomeForm.addEventListener("submit", handleWelcomeSubmit);
 
 // Socket Code
 function inNout(users) {
-  const input = msg.querySelector("input");
-  input.innerText = users;
+  const li = document.createElement("li");
+  li.innerText = users;
+  chatRoom.append(li);
 }
 
 socket.on("welcome", async (user, newCount) => {
