@@ -185,7 +185,9 @@ socket.on("welcome", async (user, newCount) => {
   socket.emit("offer", offer, roomName);
 });
 
-socket.on("offer", async (offer) => {
+socket.on("offer", async (offer, roomName, newCount) => {
+  const h3 = room.querySelector("h3");
+  h3.innerText = `Room ${roomName} (${newCount})`;
   myPeerConnection.addEventListener("datachannel", (event) => {
     myDataChannel = event.channel;
     myDataChannel.addEventListener("message", (event) => {

@@ -41,7 +41,7 @@ wsServer.on("connection", (socket) => {
     socket.to(roomName).emit("welcome", socket.nickname, countRoom(roomName));
   });
   socket.on("offer", (offer, roomName) => {
-    socket.to(roomName).emit("offer", offer);
+    socket.to(roomName).emit("offer", offer, roomName, countRoom(roomName));
   });
   socket.on("answer", (answer, roomName) => {
     socket.to(roomName).emit("answer", answer);
