@@ -1,0 +1,142 @@
+
+#Chatapp{
+    width: 100%;
+    height: auto;
+    background-image: url("https://i.postimg.cc/3wR0jzs1/apple-iphone-13-pro-max-2021-medium.png");
+    background-repeat: no-repeat;
+    background-size: 550px 1000px;
+    background-position: 50% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#frame{
+    position: relative;
+    top:25px;
+    width: 500px;
+    height: 1000px;
+}
+
+header{
+    background-color: aquamarine;
+    color: orange;
+    width: 500px;
+    z-index: -2;
+    position: absolute;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+main{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top:250px;
+    
+}
+#welcome{
+    margin: 24px 24px;
+}
+
+
+#welcome input{
+    border-radius: 10px;
+    background-color: rgb(227, 222, 222);
+    border-style: none;
+    height: 40px;
+    width: 300px;
+}
+#welcome form{
+    margin: 12px 24px;
+}
+#welcome button{
+    border-radius: 15px;
+    background-color: aquamarine;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-style: none;
+}
+
+#myStream{
+    margin: 24px 24px;
+    position:relative;
+    top:-130px;
+    left: 0%;
+}
+#room{
+    width: 100%;
+    height: 80%;
+}
+#chatting{
+    
+    padding: 12px;
+    list-style: none;
+    border: solid aquamarine 12px;
+    width: 400px;
+    height: 400px;
+}
+#msg input{
+    padding: 0px 12px;
+    border-radius: 10px;
+    background-color: rgb(227, 222, 222);
+    border-style: none;
+    height: 40px;
+    width: 370px;
+    color: white;
+    margin: 12px 0;
+
+}
+
+#msg button{
+    border-radius: 15px;
+    background-color: aquamarine;
+    color: white;
+    height: 40px;
+    width: 50px;
+    border-style: none;
+}
+
+#videoCall{
+    border-radius: 15px;
+    background-color: aquamarine;
+    color: white;
+    height: 40px;
+    width: 80px;
+    border-style: none;
+}
+#call button{
+    border-radius: 15px;
+    background-color: aquamarine;
+    color: white;
+    height: 50px;
+    width: 100px;
+    border-style: none;
+
+}
+#mute{
+    position: relative;
+    top:307px;   
+    left:15px;
+}
+#camera{
+    position: relative;
+    top: 300px;
+    left: 35px;
+}
+#myFace{
+    z-index: -2;
+    position: absolute;
+    top: 55px;
+}
+#cameras{
+    position: absolute;
+    top: 60px;
+    left:215px;
+}
+#peersFace{
+    position: absolute;
+    left:10px;
+    top:430px;
+}

@@ -39,8 +39,8 @@ function handlemessage(event) {
   myDataChannel.send(input.value);
   const chat = document.createElement("li");
   chat.innerText = input.value;
-  chatRoom.style.height = "400px";
-  chatRoom.style.width = "500px";
+  // chatRoom.style.height = "400px";
+  // chatRoom.style.width = "500px";
   chatRoom.append(chat);
   chatRoom.style.overflow = "auto";
 
@@ -139,8 +139,12 @@ videoCall.addEventListener("click", handleVideochat);
 
 async function handleVideochat() {
   if (call.hidden) {
+    chatRoom.hidden = true;
     call.hidden = false;
+    msg.hidden = true;
   } else {
+    msg.hidden = false;
+    chatRoom.hidden = false;
     call.hidden = true;
     myStream.getTracks().forEach((track) => track.stop());
     partnerStream.getTracks().forEach((track) => track.stop());
