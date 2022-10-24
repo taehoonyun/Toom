@@ -23,8 +23,10 @@ and you can start talking with a person in the chatting room.
 [![2022-10-24-114901.jpg](https://i.postimg.cc/zGZBhqrs/2022-10-24-114901.jpg)](https://postimg.cc/nC2pbbM2)
 
 if you want to talk with the person with a video call, just click the video call button!
+You can also select the camera you want to use, mute and turn off camera with below buttons.
 
 [![2022-10-24-115429.jpg](https://i.postimg.cc/vZgNJdxZ/2022-10-24-115429.jpg)](https://postimg.cc/w1z2NZkC)
+
 
 oh the person left..ㅠㅠ
 
