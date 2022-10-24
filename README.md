@@ -26,6 +26,6 @@ if you want to talk with the person with a video call, just click the video call
 
 [![2022-10-24-115429.jpg](https://i.postimg.cc/vZgNJdxZ/2022-10-24-115429.jpg)](https://postimg.cc/w1z2NZkC)
 
-oh the person someone left!
+oh the person left..ㅠㅠ
 
 [![2022-10-24-115504.jpg](https://i.postimg.cc/L5GzfG9x/2022-10-24-115504.jpg)](https://postimg.cc/K3rkhqgT)
