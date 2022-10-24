@@ -1,91 +1,96 @@
 
-#Chatapp{
-    width: 100%;
-    height: auto;
+#phoneFrame{
+    position: absolute;
+    top:10%;
+    left:30%;
+    z-index: -1;
+}
+#header{
+    width: 100vw;
+    height: 20vh;
+    font-size: 1.3vw;
+}
+body{
     background-image: url("https://i.postimg.cc/3wR0jzs1/apple-iphone-13-pro-max-2021-medium.png");
     background-repeat: no-repeat;
-    background-size: 550px 1000px;
-    background-position: 50% 0%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#frame{
-    position: relative;
-    top:25px;
-    width: 500px;
-    height: 1000px;
+    background-size: 50vw 110vh;
+    background-position: 30vw 0vh;
 }
 
-header{
+
+#Chatapp h1{
+    border-radius: 30%;
+    position: absolute;
+    top:5vh;
+    left:33vw;
     background-color: aquamarine;
     color: orange;
-    width: 500px;
-    z-index: -2;
+    width: 44vw;
     position: absolute;
-    padding-top: 30px;
+    padding: 3vh 0;
     display: flex;
     justify-content: center;
 }
-main{
+#Chatapp h2{
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top:250px;
-    
+    top:25vh;
+    left:38vw;
+    width: 35vw;
+
 }
 #welcome{
-    margin: 24px 24px;
+    width: 40vw;
+    height:20vh;
+    position: absolute;
+    top:50vh;
+    left:35vw;
+    margin: 24px 0;
 }
-
 
 #welcome input{
     border-radius: 10px;
     background-color: rgb(227, 222, 222);
     border-style: none;
-    height: 40px;
-    width: 300px;
+    height: 5vh;
+    width: 30vw;
 }
 #welcome form{
-    margin: 12px 24px;
+    height: 15vh;
+    width: 10vw;    
+    
 }
 #welcome button{
     border-radius: 15px;
     background-color: aquamarine;
     color: white;
-    height: 40px;
-    width: 100px;
+    height: 5vh;
+    width: 10vw;
+    margin: 1vh 0;
     border-style: none;
 }
 
 #myStream{
-    margin: 24px 24px;
-    position:relative;
-    top:-130px;
-    left: 0%;
+    z-index: -1;
+    position:absolute; 
+    top:23vh;
+    left:35vw;
 }
-#room{
-    width: 100%;
-    height: 80%;
-}
+
 #chatting{
-    
-    padding: 12px;
     list-style: none;
     border: solid aquamarine 12px;
-    width: 400px;
-    height: 400px;
+    width: 33vw;
+    height: 30vh;
 }
 #msg input{
-    padding: 0px 12px;
-    border-radius: 10px;
+    padding: 0px 1vw;
+    border-radius: 1vw;
     background-color: rgb(227, 222, 222);
     border-style: none;
-    height: 40px;
-    width: 370px;
+    height: 5vh;
+    width: 25vw;
     color: white;
-    margin: 12px 0;
+    margin: 0 1vw;
 
 }
 
@@ -93,50 +98,44 @@ main{
     border-radius: 15px;
     background-color: aquamarine;
     color: white;
-    height: 40px;
-    width: 50px;
+    height: 5vh;
+    width: 7vw;
     border-style: none;
+    margin: 2vh 0;
 }
 
 #videoCall{
+    margin: 0 1vw;
     border-radius: 15px;
     background-color: aquamarine;
     color: white;
-    height: 40px;
-    width: 80px;
+    height: 5vh;
+    width: 7vw;
     border-style: none;
+}
+#call{
+    position: absolute;
+    top:7vh;
+    left: 10vw;
+}
+#myFace{
+    height: 30vh;
+    margin: 1vh 0;
+
+}
+#options{
+    display: flex;
+    justify-content: space-around;
 }
 #call button{
     border-radius: 15px;
     background-color: aquamarine;
     color: white;
-    height: 50px;
-    width: 100px;
+    height: 5vh;
+    width: 5vw;
     border-style: none;
-
-}
-#mute{
-    position: relative;
-    top:307px;   
-    left:15px;
-}
-#camera{
-    position: relative;
-    top: 300px;
-    left: 35px;
-}
-#myFace{
-    z-index: -2;
-    position: absolute;
-    top: 55px;
-}
-#cameras{
-    position: absolute;
-    top: 60px;
-    left:215px;
 }
 #peersFace{
-    position: absolute;
-    left:10px;
-    top:430px;
+    margin: 1vh;
+    height: 30vh;
 }

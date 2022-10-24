@@ -28,7 +28,9 @@ function receiveMessage(event) {
   const input = room.querySelector("#msg input");
   const chat = document.createElement("li");
   chat.innerText = event.data;
-  chatRoom.style.height = "500px";
+  chat.style.backgroundColor = "lightgreen";
+  chat.style.color = "white";
+  chatRoom.style.height = "30vh";
   chatRoom.append(chat);
   chatRoom.style.overflow = "auto";
 }
@@ -39,8 +41,8 @@ function handlemessage(event) {
   myDataChannel.send(input.value);
   const chat = document.createElement("li");
   chat.innerText = input.value;
-  // chatRoom.style.height = "400px";
-  // chatRoom.style.width = "500px";
+  // chat.style.backgroundColor = "light"
+  // chat.style.color = "white";
   chatRoom.append(chat);
   chatRoom.style.overflow = "auto";
 
@@ -155,6 +157,8 @@ async function handleWelcomeSubmit(event) {
   event.preventDefault();
   const input = welcomeForm.querySelector("input");
   welcome.hidden = true;
+  const h2 = document.querySelector("#intro");
+  h2.hidden = true;
   room.hidden = false;
   await getMedia();
   myStream.getAudioTracks().forEach((track) => (track.enabled = false));
@@ -213,6 +217,18 @@ socket.on("answer", (answer) => {
 socket.on("ice", (ice) => {
   console.log("received the candidate");
   myPeerConnection.addIceCandidate(ice);
+});
+socket.on("room_change", (rooms) => {
+  const roomList = welcome.querySelector("ul");
+  roomList.innerText = "";
+  if (rooms.length === 0) {
+    return;
+  }
+  rooms.forEach((room) => {
+    const li = document.createElement("li");
+    li.innerText = room;
+    roomList.append(li);
+  });
 });
 socket.on("bye", (user, newCount) => {
   inNout(`${user} left`);
