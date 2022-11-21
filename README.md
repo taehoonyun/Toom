@@ -2,7 +2,7 @@
 
 I used pug, JavaScript, NodeJS, WebRTC Data channel, and WebSocket to build a p2p chatting and video chatting app.
 
-#skills
+# skills
 - pug
 - JavaScript
 - Nodejs
