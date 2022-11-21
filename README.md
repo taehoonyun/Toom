@@ -1,8 +1,13 @@
 # Noom
 
-I used pug, JavaScript, NodeJS, WebRTC Datachannel and websocket to build p2p chatting and video chatting app.
+I used pug, JavaScript, NodeJS, WebRTC Data channel, and WebSocket to build a p2p chatting and video chatting app.
 
-Once you login, you can see the main page
+#skills
+- pug
+- JavaScript
+- Nodejs
+- WebRTC Data Channel
+# project
 
 [![2022-10-24-114548.jpg](https://i.postimg.cc/JzZ8CXSg/2022-10-24-114548.jpg)](https://postimg.cc/Mn6Nyn6b)
 
