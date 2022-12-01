@@ -10,7 +10,9 @@ const msg = room.querySelector("#msg");
 const chatRoom = document.querySelector("#chatting");
 
 const call = document.getElementById("call");
+const stream = document.querySelector("#myStream");
 
+stream.hidden = true;
 call.hidden = true;
 room.hidden = true;
 
@@ -41,8 +43,6 @@ function handlemessage(event) {
   myDataChannel.send(input.value);
   const chat = document.createElement("li");
   chat.innerText = input.value;
-  // chat.style.backgroundColor = "light"
-  // chat.style.color = "white";
   chatRoom.append(chat);
   chatRoom.style.overflow = "auto";
 
@@ -133,14 +133,21 @@ cameraBtn.addEventListener("click", handleCameraClick);
 camerasSelect.addEventListener("click", handleCameraChange);
 
 // Welcome Form (join a room)
-const welcome = document.getElementById("welcome");
+const welcome = document.querySelector("#welcome");
 const welcomeForm = welcome.querySelector("form");
 const videoCall = document.getElementById("videoCall");
-
+const ChatappFrame = document.querySelector("#Chatapp");
+const mediaQuery = window.matchMedia("(max-width: 768px)");
 videoCall.addEventListener("click", handleVideochat);
 
 async function handleVideochat() {
   if (call.hidden) {
+    ChatappFrame.style.width = "968px";
+    if (mediaQuery.matches) {
+      // Then trigger an alert
+      ChatappFrame.style.width = "480px";
+      ChatappFrame.style.height = "968px";
+    }
     chatRoom.hidden = true;
     call.hidden = false;
     msg.hidden = true;
@@ -155,9 +162,10 @@ async function handleVideochat() {
 
 async function handleWelcomeSubmit(event) {
   event.preventDefault();
+  stream.hidden = false;
   const input = welcomeForm.querySelector("input");
-  welcome.hidden = true;
   const h2 = document.querySelector("#intro");
+  welcome.classList.add("hidden");
   h2.hidden = true;
   room.hidden = false;
   await getMedia();
@@ -228,6 +236,8 @@ socket.on("room_change", (rooms) => {
     const li = document.createElement("li");
     li.innerText = room;
     roomList.append(li);
+    roomList.style.height = "150px";
+    roomList.style.overflow = "auto";
   });
 });
 socket.on("bye", (user, newCount) => {
