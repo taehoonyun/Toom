@@ -1,7 +1,11 @@
+*{
+    font-family: 'ONE-Mobile-Title';
+}
 
 button:hover{
     cursor: pointer;
 }
+
 
 #main{
     display:flex;
@@ -12,8 +16,8 @@ button:hover{
 }
 #Chatapp{
     margin: 100px 50px;
-    width: 400px;
-    height: 550px;
+    width: 500px;
+    height: 750px;
     background-color: wheat;
     border-radius: 25px;
     box-shadow: 10px 5px 5px black;
@@ -25,9 +29,10 @@ button:hover{
     width: 100%;
     text-align: center;
     padding: 24px 0;
-    background-image: url("https://i.postimg.cc/T2ZqbXZG/349649.jpg");
+    background-image: url("https://i.postimg.cc/Znzv6DZJ/460833.jpg");
     background-size: cover;
     border-radius: 25px;
+    color:white;
 
 }
 #header img{
@@ -183,45 +188,15 @@ button:hover{
     
 }
 
-/*
 
-#myStream{
-    z-index: -1;
-    position:absolute; 
-    top:23vh;
-    left:35vw;
-}
-
-#chatting{
-    list-style: none;
-    border: solid aquamarine 12px;
-    width: 33vw;
-    height: 30vh;
-}
-
-#call{
-    position: absolute;
-    top:7vh;
-    left: 10vw;
-}
-#myFace{
-    height: 30vh;
-    margin: 1vh 0;
-
-}
-#options{
+/* #options{
     display: flex;
     justify-content: space-around;
 }
-#call button{
-    border-radius: 15px;
-    background-color: aquamarine;
-    color: white;
-    height: 5vh;
-    width: 5vw;
-    border-style: none;
+  */
+  @font-face {
+    font-family: 'ONE-Mobile-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
-#peersFace{
-    margin: 1vh;
-    height: 30vh;
-} */
