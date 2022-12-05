@@ -7,32 +7,32 @@ I used pug, JavaScript, NodeJS, WebRTC Data channel, and WebSocket to build a p2
 - JavaScript
 - Nodejs
 - WebRTC Data Channel
+# How to Use
+pull all files and use command "npm run dev"<br>
+to get a momental link, install npm i localtunnel and use command "npx localtunnel --port 3000"
 # project
 
-[![2022-10-24-114548.jpg](https://i.postimg.cc/JzZ8CXSg/2022-10-24-114548.jpg)](https://postimg.cc/Mn6Nyn6b)
+[![2022-12-02-054100.jpg](https://i.postimg.cc/qBsB117c/2022-12-02-054100.jpg)](https://postimg.cc/7bLy6M0b)
 
 And if you want to create a room, you can create a room, or you can join the room already exists.
+[![2022-12-05-152737.jpg](https://i.postimg.cc/RVGSBqKN/2022-12-05-152737.jpg)](https://postimg.cc/HVcD0YSg)
 
-[![2022-10-24-114704.jpg](https://i.postimg.cc/bNHX6Pbc/2022-10-24-114704.jpg)](https://postimg.cc/crH5HVXX)
-
-[![2022-10-24-114731.jpg](https://i.postimg.cc/7h8cVtZZ/2022-10-24-114731.jpg)](https://postimg.cc/HczBW2Mq)
+[![2022-12-05-152753.jpg](https://i.postimg.cc/YSLMY3VW/2022-12-05-152753.jpg)](https://postimg.cc/5HJhMwf4)
 
 Once you join the room, you can see how many people are in the chatting room next to the chatting room name.
 
-[![2022-10-24-114757.jpg](https://i.postimg.cc/zfyc1YLf/2022-10-24-114757.jpg)](https://postimg.cc/4KT5zMQC)
+[![2022-12-05-152816.jpg](https://i.postimg.cc/WbpVXjCj/2022-12-05-152816.jpg)](https://postimg.cc/ThsBP8TH)
 
 and you can start talking with a person in the chatting room.
 
-[![2022-10-24-114818.jpg](https://i.postimg.cc/ZqvVMPgB/2022-10-24-114818.jpg)](https://postimg.cc/3y7XyG3Y)
-[![2022-10-24-114836.jpg](https://i.postimg.cc/sxb2wrZZ/2022-10-24-114836.jpg)](https://postimg.cc/gLqd21sY)
-[![2022-10-24-114901.jpg](https://i.postimg.cc/zGZBhqrs/2022-10-24-114901.jpg)](https://postimg.cc/nC2pbbM2)
+[![2022-12-05-153006.jpg](https://i.postimg.cc/vZcswhGN/2022-12-05-153006.jpg)](https://postimg.cc/xXD7KKJv)
 
 if you want to talk with the person with a video call, just click the video call button!
 You can also select the camera you want to use, mute and turn off camera with below buttons.
 
-[![2022-10-24-115429.jpg](https://i.postimg.cc/vZgNJdxZ/2022-10-24-115429.jpg)](https://postimg.cc/w1z2NZkC)
+[![2022-12-05-152500.jpg](https://i.postimg.cc/28yJ15gq/2022-12-05-152500.jpg)](https://postimg.cc/mtxVqTLR)
 
 
 oh the person left..ㅠㅠ
 
-[![2022-10-24-115504.jpg](https://i.postimg.cc/L5GzfG9x/2022-10-24-115504.jpg)](https://postimg.cc/K3rkhqgT)
+[![2022-12-05-153028.jpg](https://i.postimg.cc/kXRsrRky/2022-12-05-153028.jpg)](https://postimg.cc/svy77xfB)
