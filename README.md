@@ -8,7 +8,7 @@ I used pug, JavaScript, NodeJS, WebRTC Data channel, and WebSocket to build a p2
 - Nodejs
 - WebRTC Data Channel
 # How to Use
-pull all files and use command "npm run dev"
+pull all files and use command "npm run dev"<br>
 to get a momental link, install npm i localtunnel and use command "npx localtunnel --port 3000"
 # project
 
