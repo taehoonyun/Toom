@@ -32,7 +32,7 @@ function receiveMessage(event) {
   chat.innerText = event.data;
   chat.style.backgroundColor = "lightgreen";
   chat.style.color = "white";
-  chatRoom.style.height = "30vh";
+  chatRoom.style.height = "75%";
   chatRoom.append(chat);
   chatRoom.style.overflow = "auto";
 }
@@ -138,6 +138,7 @@ const welcomeForm = welcome.querySelector("form");
 const videoCall = document.getElementById("videoCall");
 const ChatappFrame = document.querySelector("#Chatapp");
 const mediaQuery = window.matchMedia("(max-width: 768px)");
+const options = document.querySelector("#options");
 videoCall.addEventListener("click", handleVideochat);
 
 async function handleVideochat() {
@@ -145,9 +146,10 @@ async function handleVideochat() {
     ChatappFrame.style.width = "968px";
     if (mediaQuery.matches) {
       // Then trigger an alert
-      ChatappFrame.style.width = "480px";
+      ChatappFrame.style.width = "732px";
       ChatappFrame.style.height = "968px";
     }
+    options.style.zIndex = "1";
     chatRoom.hidden = true;
     call.hidden = false;
     msg.hidden = true;

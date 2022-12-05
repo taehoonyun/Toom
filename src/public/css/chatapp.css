@@ -6,7 +6,6 @@ button:hover{
     cursor: pointer;
 }
 
-
 #main{
     display:flex;
     justify-content: space-around;
@@ -46,7 +45,7 @@ button:hover{
     flex-direction: column;
     justify-content: space-between;
     width: 80%;
-    height: 50%;
+    height: 60%;
     position: relative;
     top:-24px;
     padding: 24px 24px;
@@ -117,7 +116,8 @@ button:hover{
     margin: 0 12px;
 }
 #msg input{
-    margin:0 8px;
+    margin-top: 36px;
+    margin-left: 12px ;
     padding: 0 12px ;
     border-radius: 15px;
     background-color: rgb(227, 222, 222);
@@ -151,19 +151,34 @@ button:hover{
     margin: 12px 12px;
     border-style: none;
 }
+
+
 #call{
-    width: 100%;
+    width: 80%;
     height: 50%;
     position: relative;
     top:-88%;
-    left:5%;
+    left:10%;
 }
 #videoChat{
+    width: 80%;
     display: flex;
 }
 #peersFace{
     position: relative;
-    left:5%;
+    left:10%;
+}
+#options{
+    display: flex;
+    width:50%;
+}
+#options button{
+    border-radius: 15px;
+    background-color: rgb(84, 84, 237);
+    color: white;
+    width: 100%;
+    height: 48px;
+    border-style: none;
 }
 
 @media only screen and (max-width: 732px) {
@@ -171,29 +186,38 @@ button:hover{
         display: flex;
         flex-direction: column;
         align-items: center;
+        
     }
    
     #videoChat{
         display: flex;
         flex-direction: column;
         justify-content: center ;
-        align-items: center;
         position: relative;
-        right:25px;
+        top:-10%;
+        left: 15%;
     }
     #peersFace{
         position: relative;
         left:0%;
     }
+    #options{
+        position: relative;
+        top:-100%;
+    }
+    #options{
+        position: relative;
+        left: 15%;
+
+    }
+    #room h3{
+        position: relative;
+        left: 10%;
+    }
     
 }
 
-
-/* #options{
-    display: flex;
-    justify-content: space-around;
-}
-  */
+ 
   @font-face {
     font-family: 'ONE-Mobile-Title';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
