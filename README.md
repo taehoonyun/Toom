@@ -12,7 +12,7 @@ pull all files and use command "npm run dev"<br>
 to get a momental link, install npm i localtunnel and use command "npx localtunnel --port 3000"
 # project
 
-[![2022-12-02-054100.jpg](https://i.postimg.cc/qBsB117c/2022-12-02-054100.jpg)](https://postimg.cc/7bLy6M0b)
+[![2022-12-05-152737.jpg](https://i.postimg.cc/RVGSBqKN/2022-12-05-152737.jpg)](https://postimg.cc/HVcD0YSg)
 
 And if you want to create a room, you can create a room, or you can join the room already exists.
 [![2022-12-05-152737.jpg](https://i.postimg.cc/RVGSBqKN/2022-12-05-152737.jpg)](https://postimg.cc/HVcD0YSg)
